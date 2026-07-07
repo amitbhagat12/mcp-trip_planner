@@ -7,7 +7,7 @@ FINAL_PROJECT/
 ├── agents/
 │   ├── planner.py            ← extracts trip params (Gemini / regex)
 │   ├── weather_agent.py      ← calls MCP TOOL 1: get_weather
-│   ├── destination_agent.py  ← calls MCP TOOL 4 + TOOL 2: wikipedia + serper
+│   ├── destination_agent.py  ← calls MCP TOOL 3: wikipedia + serper
 │   ├── transport_agent.py    ← calls MCP TOOL 2: web_search x2
 │   ├── budget_agent.py       ← calls MCP TOOL 2: web_search x3
 │   └── itinerary_agent.py    ← calls MCP TOOL 3: Gemini
