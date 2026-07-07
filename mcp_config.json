@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "trip-planner": {
+      "command": "python",
+      "args": ["mcp_server/server.py"],
+      "env": {
+        "OPENWEATHER_API_KEY": "your_openweather_key",
+        "SERPER_API_KEY":      "your_serper_key",
+        "GEMINI_API_KEY":      "your_gemini_key"
+      }
+    }
+  }
+}
