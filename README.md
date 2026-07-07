@@ -55,7 +55,7 @@ app.py
                                 └── services/*.py  ← actual API calls
 ```
 
-### The 4 MCP Tools
+### The 3 MCP Tools
 
 | Tool | API | Used by |
 |---|---|---|
@@ -63,12 +63,11 @@ app.py
 | `web_search` | Serper | destination_agent, transport_agent, budget_agent |
 | `get_wikipedia_summary` | Wikipedia (free) | destination_agent |
 
-### The 4 mcp_client/tools.py functions (match your photo exactly)
+### The 3 mcp_client/tools.py functions (match your photo exactly)
 
 ```python
 def get_weather(city)              → get_client().call_tool("get_weather", ...)
 def search_serper(query, n)        → get_client().call_tool("web_search", ...)
-def get_hotels(city, limit)        → get_client().call_tool("get_hotels", ...)
 def get_wikipedia_summary(place)   → get_client().call_tool("get_wikipedia_summary", ...)
 ```
 
