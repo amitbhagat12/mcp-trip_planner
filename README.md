@@ -22,7 +22,7 @@ FINAL_PROJECT/
 │   └── tools.py              ← 3 tool functions agents import from
 │
 ├── mcp_server/               ← MCP SERVER
-│   └── server.py             ← 4 MCP tools registered + dispatched
+│   └── server.py             ← 3 MCP tools registered + dispatched
 │
 ├── services/                 ← raw API service functions
 │   ├── weather_service.py    ← OpenWeather API
