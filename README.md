@@ -10,7 +10,7 @@ FINAL_PROJECT/
 │   ├── destination_agent.py  ← calls MCP TOOL 4 + TOOL 2: wikipedia + serper
 │   ├── transport_agent.py    ← calls MCP TOOL 2: web_search x2
 │   ├── budget_agent.py       ← calls MCP TOOL 2: web_search x3
-│   └── itinerary_agent.py    ← calls MCP TOOL 3: get_hotels + Gemini
+│   └── itinerary_agent.py    ← calls MCP TOOL 3: Gemini
 │
 ├── graph/
 │   ├── state.py              ← TripState TypedDict
@@ -19,7 +19,7 @@ FINAL_PROJECT/
 │
 ├── mcp_client/               ← MCP CLIENT
 │   ├── client.py             ← MCPClient: spawns server, sends JSON-RPC calls
-│   └── tools.py              ← 4 tool functions agents import from
+│   └── tools.py              ← 3 tool functions agents import from
 │
 ├── mcp_server/               ← MCP SERVER
 │   └── server.py             ← 4 MCP tools registered + dispatched
@@ -27,7 +27,6 @@ FINAL_PROJECT/
 ├── services/                 ← raw API service functions
 │   ├── weather_service.py    ← OpenWeather API
 │   ├── serper_service.py     ← Serper (Google Search) API
-│   ├── foursquare_service.py ← Foursquare Places API
 │   ├── wikipedia_service.py  ← Wikipedia REST API (no key needed)
 │   └── llm.py                ← Gemini wrapper
 │
@@ -49,9 +48,9 @@ FINAL_PROJECT/
 app.py
   └── graph/workflow.py (invoke_smart)
         └── agents/*.py
-              └── mcp_client/tools.py   ← 4 functions
+              └── mcp_client/tools.py   ← 3 functions
                     └── mcp_client/client.py  ← JSON-RPC over stdio
-                          └── mcp_server/server.py  ← 4 MCP tools
+                          └── mcp_server/server.py  ← 3 MCP tools
                                 └── services/*.py  ← actual API calls
 ```
 
